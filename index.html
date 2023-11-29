@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Equipos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Reserva de Equipos</h1>
+        <form id="reservaForm">
+            <label for="curso">Curso:</label>
+            <select id="curso" required>
+        <option value="1A">1º Año</option>
+        <option value="2A">2º Año</option>
+        <option value="3A">3º Año</option>
+        <option value="4A">4º Año</option>
+        <option value="5A">5º Año</option>
+        <option value="6A">6º Año</option>
+      </select>
+
+            <label for="reservadoPor">Reservado por:</label>
+            <input type="text" id="reservadoPor" required>
+
+            <label for="profesor">Profesor:</label>
+            <input type="text" id="profesor" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+
+            <label for="equipo">Equipo a reservar:</label>
+            <select id="equipo" required>
+        <option value="computadora">Computadora</option>
+        <option value="proyector">Proyector</option>
+        <option value="cargador">Cargador</option>
+        <option value="alargador">Alargador</option>
+        <option value="parlante">Parlante</option>
+      </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <select id="cantidad" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+
+            <button type="button" onclick="reservarEquipo()">Reservar</button>
+        </form>
+
+        <div id="reservas">
+            <h2>Reservas:</h2>
+            <ul id="reservaList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
